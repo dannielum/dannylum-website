@@ -1,0 +1,7 @@
+﻿{
+  "name": "Break Da Bricks",
+  "type": ["Windows Phone", "Game"],
+  "description": "Break Da Bricks is available for free on Windows Phone 7 or above, it is a clone of the classic breakout game with some tweaks.",
+  "technology": "Visual Studio XNA Game Studio 2010, .NET C#, D2D Map Editor",
+  "gallery": []
+}

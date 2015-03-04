@@ -1,0 +1,7 @@
+﻿{
+  "name": "D2D Map Editor",
+  "type": ["Windows", "Tool"],
+  "description": "D2D Map Editor enables the rapid creation of tile based map grids. It’s easy to learn and can be used by programmers and non-programmers alike. The maps generated can be deployed in games and applications developed in C++, C#, ActionScript and XML.",
+  "technology": "Visual Studio 2005/2008 Windows C# .NET, GDI+",
+  "gallery": []
+}

@@ -1,0 +1,7 @@
+﻿{
+  "name": "Breakout Clone",
+  "type": ["Windows", "Game"],
+  "description": "Breakout Clone is a simple Windows game, it is a clone of the classic breakout game.",
+  "technology": "Visual Studio 2005 .NET C#, OpenGL",
+  "gallery": []
+}

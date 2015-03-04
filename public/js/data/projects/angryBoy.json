@@ -1,0 +1,7 @@
+﻿{
+  "name": "Angry Boy",
+  "type": ["Windows Phone", "Game"],
+  "description": "Angry Boy is available for free on Windows Phone 7 or above, it is a game that is fun for all ages.",
+  "technology": "Visual Studio XNA Game Studio 2010, .NET C#, FlatRedBall Game Engine",
+  "gallery": []
+}

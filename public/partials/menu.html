@@ -1,0 +1,22 @@
+<div ng-controller="MenuCtrl">
+    <md-toolbar hide-gt-md>
+        <div class="md-toolbar-tools">
+            <span flex=""></span>
+            <md-button ng-click="close()" class="default-theme">
+                close
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-content flex class="md-default-theme">
+        <section layout="column" layout-align="space-around start">
+            <project-menu></project-menu>
+            <md-divider class="nav-menu divider"></md-divider>
+            <md-button class="md-button md-default-theme nav-menu" ng-click="menuClick('resume')">
+                Resume
+            </md-button>
+            <md-button class="md-button md-default-theme nav-menu" ng-click="menuClick('contact')">
+                Contact
+            </md-button>
+        </section>
+    </md-content>
+</div>

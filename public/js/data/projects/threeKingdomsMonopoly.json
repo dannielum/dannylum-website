@@ -1,0 +1,7 @@
+﻿{
+  "name": "Three Kingdoms Monopoly",
+  "type": ["Windows", "Game"],
+  "description": "Three Kingdoms Monopoly is a game prototype for Windows, it was written for a project during my senior year in college.",
+  "technology": "Visual Studio 2005 .NET C#, OpenGL",
+  "gallery": []
+}

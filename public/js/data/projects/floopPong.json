@@ -1,0 +1,7 @@
+﻿{
+  "name": "Floop Pong",
+  "type": ["Windows Phone", "Game"],
+  "description": "Floop Pong is available for free on Windows Phone 7 or above, it is a clone of the classic pong game.",
+  "technology": "Visual Studio XNA Game Studio 2010, .NET C#",
+  "gallery": []
+}
