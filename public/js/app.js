@@ -1,6 +1,13 @@
 (function() {
     'use strict';
 
+    require('angular');
+    require('angular-aria');
+    require('angular-animate');
+    require('angular-route');
+    require('angular-material');
+    require('jquery');
+
     angular.module('dannylum', ['ngRoute', 'ngMaterial', 'project'])
         .constant("projectListUrl", "js/data/projects.json")
         .constant("projectUrl", "js/data/projects/:id")
