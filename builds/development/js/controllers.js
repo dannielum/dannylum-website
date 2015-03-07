@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('dannylum')
-        .controller('AppCtrl', function($scope, $http, $location, $timeout, $mdSidenav, $mdBottomSheet) {
+        .controller('AppCtrl', ['$scope', '$http', '$location', '$timeout', '$mdSidenav', '$mdBottomSheet', function($scope, $http, $location, $timeout, $mdSidenav, $mdBottomSheet) {
             $scope.toggleNavigationMenu = function() {
                 $mdSidenav('menu').toggle();
             };
@@ -21,8 +21,8 @@
                     $scope.alert = clickedItem.name + ' clicked!';
                 });
             };
-        })
-        .controller('MenuCtrl', function($scope, $timeout, $mdSidenav, $log) {
+        }])
+        .controller('MenuCtrl', ['$scope', '$timeout', '$mdSidenav', '$log', function($scope, $timeout, $mdSidenav, $log) {
             $scope.close = function () {
                 $mdSidenav('menu').close()
                     .then(function () {
@@ -39,13 +39,13 @@
                 $scope.navToPage('project/' + id);
                 $scope.close();
             };
-        })
-        .controller('ProjectCtrl', function($scope, $location, $routeParams, projectService) {
+        }])
+        .controller('ProjectCtrl', ['$scope', '$location', '$routeParams', 'projectService', function($scope, $location, $routeParams, projectService) {
             projectService.getProjectById($routeParams.id).then(function (proj) {
                 $scope.project = proj;
             });
-        })
-        .controller('BottomSheetCtrl', function($scope, $mdBottomSheet) {
+        }])
+        .controller('BottomSheetCtrl', ['$scope', '$mdBottomSheet', function($scope, $mdBottomSheet) {
             $scope.items = [
                 { name: 'Hangout', icon: 'hangout' },
                 { name: 'Mail', icon: 'mail' },
@@ -58,5 +58,5 @@
                 var clickedItem = $scope.items[$index];
                 $mdBottomSheet.hide(clickedItem);
             };
-        });
+        }]);
 })();

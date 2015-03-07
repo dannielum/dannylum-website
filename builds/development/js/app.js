@@ -11,7 +11,7 @@
     angular.module('dannylum', ['ngRoute', 'ngMaterial', 'project'])
         .constant("projectListUrl", "js/data/projects.json")
         .constant("projectUrl", "js/data/projects/:id")
-        .config(function ($routeProvider) {
+        .config(['$routeProvider', function ($routeProvider) {
             $routeProvider
                 .when("/resume", {
                     templateUrl: "views/resume.html"
@@ -25,7 +25,7 @@
                 .otherwise({
                     templateUrl: "views/home.html"
                 });
-        })
+        }])
         .config(['$mdThemingProvider', function($mdThemingProvider) {
             $mdThemingProvider.theme('default')
                 .primaryPalette('indigo', {
