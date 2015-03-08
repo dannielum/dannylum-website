@@ -29,6 +29,16 @@
 .tall {
   min-height: 380px;
 }
+.external-list .external-button {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  float: left;
+}
+.external-list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .view-animate {
   padding: 10px;
 }

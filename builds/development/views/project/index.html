@@ -1,11 +1,13 @@
 <div ng-controller="ProjectCtrl">
     <md-content>
         <h1>{{project.name}}</h1>
-        <p ng-if="project.external">
-            <md-button class="md-button md-default-theme md-raised md-primary" ng-href="{{project.external.url}}" target="_blank">
-                {{project.external.name}}
-            </md-button>
-        </p>
+        <div ng-if="project.external" class="external-list">
+            <div ng-repeat="ext in project.external" class="external-button">
+                <md-button class="md-button md-default-theme md-raised md-primary" ng-href="{{ext.url}}" target="_blank">
+                    {{ext.name}}
+                </md-button>
+            </div>
+        </div>
         <p>
             <h3>{{project.description}}</h3>
         </p>

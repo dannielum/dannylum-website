@@ -3,10 +3,12 @@
   "platform": ["Windows Phone"],
   "description": "Break Da Bricks is available for free on Windows Phone 7 or above, it is a clone of the classic breakout game with some tweaks.",
   "technology": "Visual Studio XNA Game Studio 2010, .NET C#, D2D Map Editor",
-  "external": {
-    "name": "Download (MarketPlace)",
-    "url": "http://www.windowsphone.com/en-us/store/app/break-da-bricks/30eed726-fda5-e011-986b-78e7d1fa76f8"
-  },
+  "external": [
+    {
+      "name": "Download (MarketPlace)",
+      "url": "http://www.windowsphone.com/en-us/store/app/break-da-bricks/30eed726-fda5-e011-986b-78e7d1fa76f8"
+    }
+  ],
   "gallery": [
     {
       "youtube": "http://www.youtube.com/embed/2_aSU3Jh5tQ",

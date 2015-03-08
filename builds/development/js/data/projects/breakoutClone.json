@@ -1,7 +1,29 @@
 ﻿{
   "name": "Breakout Clone",
-  "type": ["Windows", "Game"],
+  "platform": ["Windows"],
   "description": "Breakout Clone is a simple Windows game, it is a clone of the classic breakout game.",
   "technology": "Visual Studio 2005 .NET C#, OpenGL",
-  "gallery": []
+  "external": [
+    {
+      "name": "Download",
+      "url": "images/projects/breakout/breakout.rar"
+    }
+  ],
+  "gallery": [
+    {
+      "youtube": "http://www.youtube.com/embed/3VlIqTyJMxc"
+    },
+    {
+      "image": "images/projects/breakout/breakout-image1.jpg"
+    },
+    {
+      "image": "images/projects/breakout/breakout-image2.jpg"
+    },
+    {
+      "image": "images/projects/breakout/breakout-image3.jpg"
+    },
+    {
+      "image": "images/projects/breakout/breakout-image5.jpg"
+    }
+  ]
 }

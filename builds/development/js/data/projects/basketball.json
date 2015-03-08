@@ -4,9 +4,5 @@
   "description": "Basketball was a college project created with Flash and ActionScript.",
   "technology": "Adobe Flash, ActionScript",
   "demo": "images/projects/basketball/basketball-block3.swf",
-  "external": {
-    "name": "Download (MarketPlace)",
-    "url": "http://www.windowsphone.com/en-us/store/app/angry-boy/e6581896-66ab-41eb-ba66-450eeec01b84"
-  },
   "gallery": []
 }

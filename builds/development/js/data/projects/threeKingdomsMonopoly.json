@@ -1,7 +1,35 @@
 ﻿{
   "name": "Three Kingdoms Monopoly",
-  "type": ["Windows", "Game"],
+  "platform": ["Windows"],
   "description": "Three Kingdoms Monopoly is a game prototype for Windows, it was written for a project during my senior year in college.",
   "technology": "Visual Studio 2005 .NET C#, OpenGL",
-  "gallery": []
+  "external": [
+    {
+      "name": "Download (SourceForge)",
+      "url": "http://sourceforge.net/projects/tkmonopoly/files"
+    }
+  ],
+  "gallery": [
+    {
+      "youtube": "http://www.youtube.com/embed/nmNZoVrxilM"
+    },
+    {
+      "image": "images/projects/threeKingdomsMonopoly/tkm-image1.jpg"
+    },
+    {
+      "image": "images/projects/threeKingdomsMonopoly/tkm-image2.jpg"
+    },
+    {
+      "image": "images/projects/threeKingdomsMonopoly/tkm-image3.jpg"
+    },
+    {
+      "image": "images/projects/threeKingdomsMonopoly/tkm-image4.jpg"
+    },
+    {
+      "image": "images/projects/threeKingdomsMonopoly/tkm-image5.jpg"
+    },
+    {
+      "image": "images/projects/threeKingdomsMonopoly/tkm-image6.jpg"
+    }
+  ]
 }
