@@ -14,14 +14,14 @@
                     Menu
                 </md-button>
                 <span flex=""></span>
-                <span class="md-flex clicky" ng-click="navToPage('')">Danny Lum <small>A Software Developer's Portfolio</small></span>
+                <span class="md-flex clicky" ng-click="navToPage('')">Danny Lum<br /><small>A Software Developer's Portfolio</small></span>
             </div>
         </md-toolbar>
         <section layout="row" flex>
-            <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="menu" md-is-locked-open="$media('gt-md')">
+            <md-sidenav class="md-sidenav-left md-whiteframe-z2 lightgreen-background" md-component-id="menu" md-is-locked-open="$media('gt-md')">
                 <div ng-include="'partials/menu.html'"></div>
             </md-sidenav>
-            <md-content flex layout="column" class="md-padding center center">
+            <md-content flex layout="column" class="md-padding center center menu-background">
                 <div ng-view></div>
             </md-content>
         </section>

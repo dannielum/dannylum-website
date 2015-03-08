@@ -8,9 +8,12 @@
   padding-bottom: 5px;
   margin-top: 10px;
 }
+.lightgreen-background {
+  background-color: #c5e1a5;
+}
 .jumbo-header {
-  padding: 70px;
-  background-color: lightsteelblue;
+  padding: 50px;
+  background-color: #c5e1a5;
 }
 .clicky {
   cursor: pointer;
@@ -19,6 +22,12 @@
   position: fixed;
   bottom: 0;
   right: 0;
+}
+.fit-box {
+  width: 100%;
+}
+.tall {
+  min-height: 380px;
 }
 .view-animate {
   padding: 10px;

@@ -14,6 +14,7 @@ var jsSources = [
     'builds/development/js/app.js',
     'builds/development/js/controllers.js',
     'builds/development/js/services.js',
+    'builds/development/js/filters.js',
     'builds/development/js/components/project/project.js',
 ];
 var lessSources = ['builds/development/styles/*.less'];
@@ -49,12 +50,12 @@ gulp.task('html', function () {
 
 gulp.task('json', function() {
     gulp.src(jsonSources)
-        .pipe(connect.reload())
+        .pipe(connect.reload());
 });
 
 gulp.task('watch', function () {
-    gulp.watch(htmlSources, ['html']);
     gulp.watch(jsonSources, ['json']);
+    gulp.watch(htmlSources, ['html']);
     gulp.watch(jsSources, ['js']);
     gulp.watch(lessSources, ['less']);
 });

@@ -1,7 +1,48 @@
 ﻿{
   "name": "Angry Boy",
-  "type": ["Windows Phone", "Game"],
+  "platform": ["Windows Phone"],
   "description": "Angry Boy is available for free on Windows Phone 7 or above, it is a game that is fun for all ages.",
   "technology": "Visual Studio XNA Game Studio 2010, .NET C#, FlatRedBall Game Engine",
-  "gallery": []
+  "external": {
+    "name": "Download (MarketPlace)",
+    "url": "http://www.windowsphone.com/en-us/store/app/angry-boy/e6581896-66ab-41eb-ba66-450eeec01b84"
+  },
+  "gallery": [
+    {
+      "youtube": "http://www.youtube.com/embed/ojtqsX_U_vk",
+      "caption": "Version 1.5"
+    },
+    {
+      "youtube": "http://www.youtube.com/embed/lvM8VblinrE",
+      "caption": "Version 1.2"
+    },
+    {
+      "youtube": "http://www.youtube.com/embed/LIU3xU9ZiVU",
+      "caption": "Alpha Prototype"
+    },
+    {
+      "image": "images/projects/angryBoy/angryBoy-image1.png"
+    },
+    {
+      "image": "images/projects/angryBoy/angryBoy-image2.png"
+    },
+    {
+      "image": "images/projects/angryBoy/angryBoy-image3.png"
+    },
+    {
+      "image": "images/projects/angryBoy/angryBoy-image4.png"
+    },
+    {
+      "image": "images/projects/angryBoy/angryBoy-image5.png"
+    },
+    {
+      "image": "images/projects/angryBoy/angryBoy-image6.png"
+    },
+    {
+      "image": "images/projects/angryBoy/angryBoy-image7.png"
+    },
+    {
+      "image": "images/projects/angryBoy/angryBoy-image8.png"
+    }
+  ]
 }
