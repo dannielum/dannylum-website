@@ -94,6 +94,9 @@ gulp.task('deploy', ['less', 'js', 'import-css', 'connect-production'], function
     gulp.src(jsonSources)
         .pipe(jsonminify())
         .pipe(gulp.dest('builds/production/js/data'));
+
+    gulp.src('builds/development/images/**/*.*')
+        .pipe(gulp.dest('builds/production/images'));
 });
 
 gulp.task('default', ['html', 'json', 'less', 'js', 'import-css', 'connect', 'watch']);
