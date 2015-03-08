@@ -45,6 +45,13 @@
                 $scope.project = proj;
             });
         }])
+        .controller('ContactCtrl', ['$scope', function($scope) {
+            $scope.contact = {
+                subject: '',
+                email: '',
+                content: ''
+            };
+        }])
         .controller('BottomSheetCtrl', ['$scope', '$mdBottomSheet', function($scope, $mdBottomSheet) {
             $scope.items = [
                 { name: 'Hangout', icon: 'hangout' },

@@ -6,9 +6,10 @@
     require('angular-animate');
     require('angular-route');
     require('angular-material');
+    require('angular-messages');
     require('jquery');
 
-    angular.module('dannylum', ['ngRoute', 'ngMaterial', 'project'])
+    angular.module('dannylum', ['ngRoute', 'ngMessages', 'ngMaterial', 'project'])
         .constant("projectListUrl", "js/data/projects.json")
         .constant("projectUrl", "js/data/projects/:id")
         .config(['$routeProvider', function ($routeProvider) {

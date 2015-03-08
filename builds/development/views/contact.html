@@ -1,2 +1,36 @@
 <h1>Contact</h1>
 <md-divider></md-divider>
+<div ng-controller="ContactCtrl">
+    <md-content class="md-padding">
+        <form name="contactForm">
+            <md-input-container>
+                <label>Subject</label>
+                <input md-maxlength="150" required name="subject" ng-model="contact.subject">
+                <div ng-messages="contactForm.subject.$error">
+                    <div ng-message="required">required</div>
+                    <div ng-message="md-maxlength">subject is too long</div>
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <label>Your Email Address</label>
+                <input type="email" required name="email" ng-model="contact.email">
+                <div ng-messages="contactForm.email.$error">
+                    <div ng-message="required">required.</div>
+                    <div ng-message="email">Your email address is invalid</div>
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <label>Content</label>
+                <textarea required name="content" ng-model="contact.content" rows="1"></textarea>
+                <div ng-messages="contactForm.content.$error">
+                    <div ng-message="required">required.</div>
+                </div>
+            </md-input-container>
+            <md-input-container layout="row" layout-align="end end" class="space-top">
+                <md-button class="md-primary md-hue-2 md-raised" ng-click="sendEmail()">
+                    Contact Me
+                </md-button>
+            </md-input-container>
+        </form>
+    </md-content>
+</div>

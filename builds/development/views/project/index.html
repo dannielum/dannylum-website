@@ -24,8 +24,8 @@
         <div ng-if="project.demo" layout="column" layout-align="center center" class="tall">
             <iframe ng-src="{{project.demo | trustedUrl}}" flex frameborder="0" class="fit-box"></iframe>
         </div>
-        <div layout="row" layout-sm="column" layout-wrap layout-align="center center">
-            <div ng-repeat="item in project.gallery">
+        <div layout="row" layout-sm="column" layout-wrap layout-align="center center" class="gallery">
+            <div ng-repeat="item in project.gallery" class="gallery-box">
                 <iframe ng-if="item.youtube" width="360" height="270" ng-src="{{item.youtube | trustedUrl}}" frameborder="0" allowfullscreen></iframe>
                 <img ng-if="item.image" ng-src="{{item.image}}">
                 <br />

@@ -8,6 +8,9 @@
   padding-bottom: 5px;
   margin-top: 10px;
 }
+.space-top {
+  padding-top: 50px;
+}
 .lightgreen-background {
   background-color: #c5e1a5;
 }
@@ -28,6 +31,9 @@
 }
 .tall {
   min-height: 380px;
+}
+.gallery .gallery-box {
+  padding: 10px;
 }
 .external-list .external-button {
   padding-right: 20px;
