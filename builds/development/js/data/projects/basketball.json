@@ -1,6 +1,11 @@
 ﻿{
   "name": "Basketball",
-  "platform": ["Flash"],
+  "platform": [
+    {
+      "icon": "laptop",
+      "name": "Flash"
+    }
+  ],
   "description": "Basketball was a college project created with Flash and ActionScript.",
   "technology": "Adobe Flash, ActionScript",
   "demo": "images/projects/basketball/basketball-block3.swf",

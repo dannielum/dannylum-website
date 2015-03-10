@@ -98,12 +98,9 @@
         }])
         .controller('BottomSheetCtrl', ['$scope', '$mdBottomSheet', function($scope, $mdBottomSheet) {
             $scope.items = [
-                { name: 'Hangout', icon: 'hangout' },
-                { name: 'Mail', icon: 'mail' },
-                { name: 'Message', icon: 'message' },
-                { name: 'Copy', icon: 'copy' },
-                { name: 'Facebook', icon: 'facebook' },
-                { name: 'Twitter', icon: 'twitter' },
+                { name: 'LinkedIn', icon: 'linkedin-square' },
+                { name: 'Mail', icon: 'envelope-o' },
+                { name: 'Github', icon: 'github' }
             ];
             $scope.listItemClick = function($index) {
                 var clickedItem = $scope.items[$index];

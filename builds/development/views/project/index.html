@@ -1,35 +1,42 @@
 <div ng-controller="ProjectCtrl">
     <md-content>
-        <h1>{{project.name}}</h1>
-        <div ng-if="project.external" class="external-list">
-            <div ng-repeat="ext in project.external" class="external-button">
-                <md-button class="md-button md-default-theme md-raised md-primary" ng-href="{{ext.url}}" target="_blank">
-                    {{ext.name}}
-                </md-button>
+        <md-progress-circular ng-hide="project" class="md-hue-2" md-mode="indeterminate"></md-progress-circular>
+        <div ng-show="project">
+            <h1>{{project.name}}</h1>
+            <div ng-if="project.external" class="external-list">
+                <div ng-repeat="ext in project.external" class="external-button">
+                    <md-button class="md-button md-raised md-primary md-hue-2 fat" ng-href="{{ext.url}}" target="_blank">
+                        <i class="fa fa-{{ext.icon}} fa-lg"></i>&nbsp;&nbsp;{{ext.name}}
+                    </md-button>
+                </div>
             </div>
-        </div>
-        <p>
-            <h3>{{project.description}}</h3>
-        </p>
-        <p>
-            <strong>Technology:</strong><br />
-            {{project.technology}}
-        </p>
-        <p>
-            <strong>Platform:</strong><br />
-            <span ng-repeat="t in project.platform">
-                {{t}}<span ng-if="!$last">,</span>
-            </span>
-        </p>
-        <div ng-if="project.demo" layout="column" layout-align="center center" class="tall">
-            <iframe ng-src="{{project.demo | trustedUrl}}" flex frameborder="0" class="fit-box"></iframe>
-        </div>
-        <div layout="row" layout-sm="column" layout-wrap layout-align="center center" class="gallery">
-            <div ng-repeat="item in project.gallery" class="gallery-box">
-                <iframe ng-if="item.youtube" width="360" height="270" ng-src="{{item.youtube | trustedUrl}}" frameborder="0" allowfullscreen></iframe>
-                <img ng-if="item.image" ng-src="{{item.image}}">
-                <br />
-                <h4>{{item.caption}}</h4>
+            <p>
+                <h3>{{project.description}}</h3>
+            </p>
+            <p>
+                <strong>Technology:</strong><br />
+                {{project.technology}}
+            </p>
+            <p>
+                <strong>Platform:</strong><br />
+                <span ng-repeat="t in project.platform">
+                    <md-button class="md-fab md-mini md-primary md-hue-2">
+                        <i class="fa fa-{{t.icon}} fa-lg"></i>
+                    </md-button>
+                    {{t.name}}
+                    <span ng-if="!$last">,</span>
+                </span>
+            </p>
+            <div ng-if="project.demo" layout="column" layout-align="center center" class="tall">
+                <iframe ng-src="{{project.demo | trustedUrl}}" flex frameborder="0" class="fit-box"></iframe>
+            </div>
+            <div layout="row" layout-sm="column" layout-wrap layout-align="center center" class="gallery">
+                <div ng-repeat="item in project.gallery" class="gallery-box">
+                    <iframe ng-if="item.youtube" width="360" height="270" ng-src="{{item.youtube | trustedUrl}}" frameborder="0" allowfullscreen></iframe>
+                    <img ng-if="item.image" ng-src="{{item.image}}">
+                    <br />
+                    <h4>{{item.caption}}</h4>
+                </div>
             </div>
         </div>
     </md-content>

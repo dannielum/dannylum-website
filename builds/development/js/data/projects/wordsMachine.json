@@ -1,6 +1,11 @@
 ﻿{
   "name": "Words Machine",
-  "platform": ["Flash"],
+  "platform": [
+    {
+      "icon": "laptop",
+      "name": "Flash"
+    }
+  ],
   "description": "Words Machine is a Flash based word puzzle game.",
   "technology": "Adobe Flash, ActionScript",
   "demo": "images/projects/wordsMachine/wordsMachine.swf",

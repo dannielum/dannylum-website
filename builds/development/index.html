@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
     <title>Danny Lum's Portfolio</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" media="all">
     <link rel="stylesheet" href="styles/angular-material.css" media="all" />
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
@@ -11,7 +12,7 @@
         <md-toolbar>
             <div class="md-toolbar-tools">
                 <md-button ng-click="toggleNavigationMenu()" class="md-default-theme" hide-gt-md>
-                    Menu
+                    <i class="fa fa-bars fa-2x"></i>
                 </md-button>
                 <span flex=""></span>
                 <span class="md-flex clicky" ng-click="navToPage('')">Danny Lum<br /><small>A Software Developer's Portfolio</small></span>
@@ -26,12 +27,11 @@
             </md-content>
         </section>
         <div class="sticky-footer">
-            <md-button class="md-accent md-raised" ng-click="showBottomSheet($event)">
-                External
+            <md-button class="md-accent md-hue-2" ng-click="showBottomSheet($event)">
+                <i class="fa fa-info-circle fa-3x"></i>
             </md-button>
         </div>
     </div>
-
     <script src="js/bundled.js"></script>
 </body>
 </html>

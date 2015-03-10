@@ -1,6 +1,11 @@
 ﻿{
   "name": "Cuby Adventure",
-  "platform": ["Flash"],
+  "platform": [
+    {
+      "icon": "laptop",
+      "name": "Flash"
+    }
+  ],
   "description": "Cuby Adventure is a Flash based top down adventure game prototype.",
   "technology": "Adobe Flash, ActionScript",
   "demo": "images/projects/cubyAdventure/cuby_alpha_demo.swf",

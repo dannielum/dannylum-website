@@ -1,11 +1,17 @@
 ﻿{
   "name": "Three Kingdoms Monopoly",
-  "platform": ["Windows"],
+  "platform": [
+    {
+      "icon": "windows",
+      "name": "Windows"
+    }
+  ],
   "description": "Three Kingdoms Monopoly is a game prototype for Windows, it was written for a project during my senior year in college.",
   "technology": "Visual Studio 2005 .NET C#, OpenGL",
   "external": [
     {
-      "name": "Download (SourceForge)",
+      "icon": "download",
+      "name": "Download",
       "url": "http://sourceforge.net/projects/tkmonopoly/files"
     }
   ],

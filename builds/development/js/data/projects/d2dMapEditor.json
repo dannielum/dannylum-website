@@ -1,18 +1,26 @@
 ﻿{
   "name": "D2D Map Editor",
-  "platform": ["Windows"],
+  "platform": [
+    {
+      "icon": "windows",
+      "name": "Windows"
+    }
+  ],
   "description": "D2D Map Editor enables the rapid creation of tile based map grids. It’s easy to learn and can be used by programmers and non-programmers alike. The maps generated can be deployed in games and applications developed in C++, C#, ActionScript and XML.",
   "technology": "Visual Studio 2005/2008 Windows C# .NET, GDI+",
   "external": [
     {
+      "icon": "github",
       "name": "GitHub",
       "url": "https://github.com/dannielum/D2DMapEditor_2.5.0"
     },
     {
-      "name": "Download (SourceForge)",
+      "icon": "download",
+      "name": "SourceForge",
       "url": "http://sourceforge.net/projects/d2dmapeditor/files"
     },
     {
+      "icon": "book",
       "name": "Documentation",
       "url": "images/projects/d2dproject/D2D_Users_Manual_Beta_2.5.x_v0.8.pdf"
     }

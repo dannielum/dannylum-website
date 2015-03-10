@@ -1,10 +1,16 @@
 ﻿{
   "name": "Breakout Clone",
-  "platform": ["Windows"],
+  "platform": [
+    {
+      "icon": "windows",
+      "name": "Windows"
+    }
+  ],
   "description": "Breakout Clone is a simple Windows game, it is a clone of the classic breakout game.",
   "technology": "Visual Studio 2005 .NET C#, OpenGL",
   "external": [
     {
+      "icon": "download",
       "name": "Download",
       "url": "images/projects/breakout/breakout.rar"
     }
