@@ -52,15 +52,39 @@
                 content: ''
             };
         }])
-        .controller('BottomSheetCtrl', ['$scope', '$mdBottomSheet', function($scope, $mdBottomSheet) {
+        .controller('BottomSheetCtrl', ['$scope', '$window', '$location', '$mdBottomSheet', function($scope, $window, $location, $mdBottomSheet) {
             $scope.items = [
-                { name: 'LinkedIn', icon: 'linkedin-square' },
-                { name: 'Mail', icon: 'envelope-o' },
-                { name: 'Github', icon: 'github' }
+                {
+                    name: 'LinkedIn',
+                    icon: 'linkedin-square',
+                    url:  {
+                        link: 'http://www.linkedin.com/in/dannylum',
+                        type: 'external'
+                    }
+                },
+                {
+                    name: 'Mail',
+                    icon: 'envelope-o',
+                    url: {
+                        link: '/contact',
+                        type: 'internal'
+                    }
+                },
+                {
+                    name: 'Github',
+                    icon: 'github',
+                    url: {
+                        link: 'http://www.github.com/dannielum',
+                        type: 'external'
+                    }
+                }
             ];
-            $scope.listItemClick = function($index) {
-                var clickedItem = $scope.items[$index];
-                $mdBottomSheet.hide(clickedItem);
+            $scope.listItemClick = function(item) {
+                if (item.url.type === 'external')
+                    $window.open(item.url.link, '_blank');
+                else
+                    $location.path(item.url.link);
+                $mdBottomSheet.hide(item);
             };
         }]);
 })();

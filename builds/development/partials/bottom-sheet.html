@@ -1,7 +1,7 @@
 <md-bottom-sheet class="md-grid">
     <md-list layout="row" layout-align="center center">
         <md-item ng-repeat="item in items">
-            <md-button class="md-grid-item-content" aria-label="{{item.name}}" ng-click="listItemClick($index)">
+            <md-button class="md-grid-item-content" aria-label="{{item.name}}" ng-click="listItemClick(item)">
                 <div class="md-icon-container">
                     <i class="fa fa-{{item.icon}} fa-3x"></i>
                 </div>
