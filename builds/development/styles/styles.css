@@ -4,18 +4,6 @@ body {
 .code-box {
   font-size: 20px;
 }
-.code-box pre {
-  white-space: pre-wrap;
-  /* CSS 3 */
-  white-space: -moz-pre-wrap;
-  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;
-  /* Opera 4-6 */
-  white-space: -o-pre-wrap;
-  /* Opera 7 */
-  word-wrap: break-word;
-  /* Internet Explorer 5.5+ */
-}
 .nav-menu {
   width: 100%;
   padding: 20px;
@@ -68,12 +56,13 @@ body {
 }
 .page {
   width: 90%;
-  position: absolute;
 }
 .page.ng-leave {
+  position: absolute;
   z-index: 9999;
 }
 .page.ng-enter {
+  position: absolute;
   z-index: 8888;
 }
 .view-animate.ng-leave {
