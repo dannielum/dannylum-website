@@ -32,8 +32,8 @@ body {
   bottom: 0;
   right: 0;
 }
-.fit-box {
-  width: 100%;
+.flash-box {
+  width: 500px;
 }
 .tall {
   min-height: 380px;
