@@ -6,8 +6,46 @@
         I am a New York based web developer and software engineer.
     </h3>
 </div>
-<br />
 <div>
-    Thank you for visiting my personal online portfolio. I am currently a .NET developer but I am very interested at MEAN stack recently.
-    I like working on front-end and javascript frameworks such as AngularJS. I also make indie games as hobby occasionally.
+    <md-switch class="md-primary" ng-model="programmerMode">
+        Programmer Mode {{ programmerMode ? 'On' : 'Off' }}
+    </md-switch>
+</div>
+<div ng-if="!programmerMode">
+    <p>
+        Thank you for visiting my personal online portfolio. I am a .NET and JavaScript developer at work but I am very interested at MEAN stack recently.
+        I like working on front-end and javascript frameworks such as AngularJS. I also make indie games as hobby occasionally.
+    </p>
+</div>
+<div class="code-box" ng-if="programmerMode">
+    <pre>
+    while (alive) {
+        switch (mode) {
+            case 'work':
+                tools = {
+                    'projects': ['.NET', 'AngularJS', 'more...'],
+                    'languages': ['C#', 'JavaScript']
+                };
+                program(tools);
+                break;
+            case 'free':
+                tools = {
+                    'projects': ['NodeJS', 'AngularJS', 'Mobile', 'more...'],
+                    'languages': ['C#', 'JavaScript']
+                }
+                program(tools);
+                break;
+            case 'bored':
+                tools = {
+                    'projects': ['Game', 'Arduino'],
+                    'languages': ['C#', 'JavaScript']
+                }
+                program(tools);
+                break;
+            default:
+                sleep();
+                break;
+        }
+    }
+    </pre>
 </div>

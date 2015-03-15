@@ -3,6 +3,8 @@
 
     angular.module('dannylum')
         .controller('AppCtrl', ['$scope', '$http', '$location', '$timeout', '$mdSidenav', '$mdBottomSheet', function($scope, $http, $location, $timeout, $mdSidenav, $mdBottomSheet) {
+            $scope.programmerMode = false;
+
             $scope.toggleNavigationMenu = function() {
                 $mdSidenav('menu').toggle();
             };
