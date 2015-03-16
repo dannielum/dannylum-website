@@ -19,6 +19,7 @@ var jsSources = [
 ];
 var lessSources = ['builds/development/styles/*.less'];
 var cssImportSources = ['node_modules/angular-material/angular-material.css'];
+var phpImportSources = ['builds/development/*.php'];
 var htmlSources = ['builds/development/**/*html'];
 var jsonSources = ['builds/development/js/data/**/*.json'];
 
@@ -82,6 +83,9 @@ gulp.task('deploy', ['less', 'js', 'import-css', 'connect-production'], function
     gulp.src(cssImportSources)
         .pipe(minifyCSS())
         .pipe(gulp.dest('builds/production/styles'));
+
+    gulp.src(phpImportSources)
+        .pipe(gulp.dest('builds/production'));
 
     gulp.src('builds/development/styles/styles.css')
         .pipe(minifyCSS())

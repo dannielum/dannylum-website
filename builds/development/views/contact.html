@@ -2,7 +2,7 @@
 <md-divider></md-divider>
 <div ng-controller="ContactCtrl">
     <md-content class="md-padding">
-        <form name="contactForm">
+        <form name="contactForm" action="emailHandler.php" method="POST">
             <md-input-container>
                 <label>Subject</label>
                 <input md-maxlength="150" required name="subject" ng-model="contact.subject">

@@ -21,6 +21,9 @@
                 .when("/contact", {
                     templateUrl: "views/contact.html"
                 })
+                .when("/thankyou", {
+                    templateUrl: "views/thankyou.html"
+                })
                 .when("/project/:id", {
                     templateUrl: "views/project/index.html"
                 })
