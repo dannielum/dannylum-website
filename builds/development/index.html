@@ -11,15 +11,15 @@
     <div ng-controller="AppCtrl" layout="column" layout-fill>
         <md-toolbar>
             <div class="md-toolbar-tools">
-                <md-button ng-click="toggleNavigationMenu()" class="md-default-theme" hide-gt-md>
+                <md-button aria-label="toggle navigation menu" ng-click="toggleNavigationMenu()" class="md-default-theme" hide-gt-md>
                     <i class="fa fa-bars fa-2x"></i>
                 </md-button>
                 <span flex=""></span>
-                <span class="md-flex clicky" ng-click="navToPage('')">Danny Lum<br /><small>A Software Developer's Portfolio</small></span>
+                <span aria-label="navigate to home" class="md-flex clicky" ng-click="navToPage('')">Danny Lum<br /><small>A Software Developer's Portfolio</small></span>
             </div>
         </md-toolbar>
         <section layout="row" flex>
-            <md-sidenav class="md-sidenav-left md-whiteframe-z2 lightgreen-background" md-component-id="menu" md-is-locked-open="$media('gt-md')">
+            <md-sidenav class="md-sidenav-left md-whiteframe-z2 lightgreen-background" md-component-id="menu" md-is-locked-open="$mdMedia('gt-md')">
                 <div ng-include="'partials/menu.html'"></div>
             </md-sidenav>
             <md-content flex layout="column" class="md-padding menu-background">
@@ -27,7 +27,7 @@
             </md-content>
         </section>
         <div class="sticky-footer">
-            <md-button class="md-accent md-hue-2" ng-click="showBottomSheet($event)">
+            <md-button aria-label="show bottom sheet" class="md-accent md-hue-2" ng-click="showBottomSheet($event)">
                 <i class="fa fa-info-circle fa-3x"></i>
             </md-button>
         </div>

@@ -6,13 +6,10 @@ body {
 }
 .nav-menu {
   width: 100%;
-  padding: 20px;
+  font-size: 16px;
   text-align: left;
-}
-.nav-menu.divider {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 10px;
+  margin: 0;
+  padding: 10px 10px 10px 20px;
 }
 .fat {
   padding: 10px;
@@ -46,8 +43,11 @@ body {
 }
 .external-list .external-button {
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   float: left;
+}
+.external-list .external-button a.md-button {
+  margin-left: 0;
 }
 .external-list:after {
   content: '';

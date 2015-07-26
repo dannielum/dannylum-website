@@ -2,21 +2,21 @@
     <md-toolbar hide-gt-md>
         <div class="md-toolbar-tools">
             <span flex=""></span>
-            <md-button ng-click="close()" class="default-theme">
+            <md-button aria-label="close bottom sheet" ng-click="close()" class="default-theme">
                 <i class="fa fa-chevron-left fa-2x"></i>
             </md-button>
         </div>
     </md-toolbar>
     <div flex class="menu-background">
-        <section layout="column" layout-align="space-around start">
+        <menu-link layout-align="space-around start">
             <project-menu></project-menu>
             <md-divider class="nav-menu divider"></md-divider>
-            <md-button class="md-button md-default-theme nav-menu" ng-click="menuClick('resume')">
+            <md-button aria-label="navigate to resume" class="md-button md-default-theme nav-menu" ng-click="menuClick('resume')">
                 Resume
             </md-button>
-            <md-button class="md-button md-default-theme nav-menu" ng-click="menuClick('contact')">
+            <md-button aria-label="navigate to contact" class="md-button md-default-theme nav-menu" ng-click="menuClick('contact')">
                 Contact
             </md-button>
-        </section>
+        </menu-link>
     </div>
 </div>

@@ -1,4 +1,4 @@
 <md-progress-circular ng-hide="projects" class="md-hue-2" md-mode="indeterminate"></md-progress-circular>
-<md-button class="md-button md-default-theme nav-menu" ng-repeat="proj in projects" ng-click="navToProject(proj.id)">
+<md-button aria-label="{{'navigate to project ' + proj.name}}" class="md-button md-default-theme nav-menu" ng-repeat="proj in projects" ng-click="navToProject(proj.id)">
     {{proj.name}}
 </md-button>

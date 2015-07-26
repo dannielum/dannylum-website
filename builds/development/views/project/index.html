@@ -5,7 +5,7 @@
             <h1>{{project.name}}</h1>
             <div ng-if="project.external" class="external-list">
                 <div ng-repeat="ext in project.external" class="external-button">
-                    <md-button class="md-button md-raised md-primary md-hue-2 fat" ng-href="{{ext.url}}" target="_blank">
+                    <md-button aria-label="{{'go to ' + ext.name}}" class="md-button md-raised md-primary md-hue-2" ng-href="{{ext.url}}" target="_blank">
                         <i class="fa fa-{{ext.icon}} fa-lg"></i>&nbsp;&nbsp;{{ext.name}}
                     </md-button>
                 </div>
@@ -14,13 +14,13 @@
                 <h3>{{project.description}}</h3>
             </p>
             <p>
-                <strong>Technology:</strong><br />
-                {{project.technology}}
+                <strong>Technology:</strong>
+                <p>{{project.technology}}</p>
             </p>
             <p>
                 <strong>Platform:</strong><br />
                 <span ng-repeat="t in project.platform">
-                    <md-button class="md-fab md-mini md-primary md-hue-2">
+                    <md-button aria-label="{{'build for ' + t.icon}}" class="md-fab md-mini md-primary md-hue-2">
                         <i class="fa fa-{{t.icon}} fa-lg"></i>
                     </md-button>
                     &nbsp;{{t.name}}
