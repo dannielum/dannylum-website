@@ -17,12 +17,20 @@ body {
 .space-top {
   padding-top: 50px;
 }
+.custom-background {
+  background: url(../images/background.jpg) right bottom no-repeat;
+}
+.no-background {
+  background-color: rgba(255, 255, 255, 0);
+}
 .lightgreen-background {
   background-color: #c5e1a5;
 }
+.transparent-background {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .jumbo-header {
   padding: 30px;
-  background: linear-gradient(#c5e1a5, #edf6e4);
 }
 .clicky {
   cursor: pointer;
